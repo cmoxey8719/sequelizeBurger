@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "mo2yfYq@",
+    "database": "burger_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "xg88eal6tl0vunvv",
+    "password": "nvda4z6nh1qm1t6z",
+    "database": "ogxcu0l8u2q20xf6",
+    "host": "iwqrvsv8e5fz4uni.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

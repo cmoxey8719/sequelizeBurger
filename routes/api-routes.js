@@ -2,20 +2,13 @@
 var db = require("../models");
 
 module.exports = function(app){
-  //GET to populate page
-  app.get("/", function(req, res) {
-    db.Burger.findAll({}).then(function(dbBurger){
-      res.json(dbBurger);
-    })
-  });
-
 
   //POST to add new items to database
   app.post("/", function(req, res) {
     db.Burger.create({
-      burger: req.body.burger
+      burger: req.body.burger, devour: false
     }).then(function(dbBurger){
-      res.json(dbBurger);
+      res.redirect("/");
     });
   });
 
@@ -25,10 +18,10 @@ module.exports = function(app){
       devour: true
     }, {
       where: {
-        id: req.body.id
+        id: req.params.id
       }
     }).then(function(dbBurger){
-      res.json(dbBurger);
+      res.redirect("/");
     })
   });
 };

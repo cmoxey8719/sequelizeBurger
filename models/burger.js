@@ -1,8 +1,17 @@
+
 module.exports = function(sequelize, DataTypes){
 	var Burger = sequelize.define("Burger", {
-		burger: DataTypes.STRING,
-		devour: DataTypes.BOOLEAN,
-		createdAt: DataTypes.TIMESTAMP
+		id: {
+			type: DataTypes.INTEGER,
+			autoIncrement: true,
+			primaryKey: true
+		},
+		burger: {
+			type: DataTypes.STRING
+		},
+		devour: {
+			type: DataTypes.BOOLEAN
+		}
 	});
 	return Burger;
 };

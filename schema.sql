@@ -1,10 +1,10 @@
-USE `x8lnytyzk8sgzn09`;
+USE x8lnytyzk8sgzn09;
 
 CREATE TABLE burgers (
 	id INT AUTO_INCREMENT NOT NULL,
 	burger varchar(255) NOT NULL,
     devour BOOLEAN DEFAULT false,
-    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
+    createdAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, 
 	PRIMARY KEY (id)
 );
 

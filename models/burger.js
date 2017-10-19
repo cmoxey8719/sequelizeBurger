@@ -1,6 +1,8 @@
 module.exports = function(sequelize, DataTypes){
 	var Burger = sequelize.define("Burger", {
 		burger: DataTypes.STRING,
-		devour: DataTypes.BOOLEAN
-	})
+		devour: DataTypes.BOOLEAN,
+		createdAt: DataTypes.TIMESTAMP
+	});
+	return Burger;
 };
